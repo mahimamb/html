@@ -1,0 +1,189 @@
+*************What is HTML?****************
+1)HTML stands for Hyper Text Markup Language
+2)HTML is the standard markup language for creating Web pages
+3)HTML describes the structure of a Web page
+4)HTML consists of a series of elements
+5)HTML elements tell the browser how to display the content
+6)HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+
+syntax for html tag 
+<tagname> Content goes here... </tagname>
+
+eg-1
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+Explanation in before eg-1 --
+Start tag	Element content	       End tag
+<h1>	        My First Heading	</h1>
+<p>	        My first paragraph.	</p>
+<br>	        none	                none
+
+
+eg-2
+<!DOCTYPE html> //it denotes version of the html,not case sensitive 
+<html>
+<body>
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+</body>
+</html>
+
+*********LINKS*********
+syntax
+<a href="https://www.w3schools.com">This is a link</a> //href denotes destination of the specify link.
+
+***********HTML Attributes*****************
+1)All HTML elements can have attributes
+2)Attributes provide additional information about elements
+3)Attributes are always specified in the start tag
+4)Attributes usually come in name/value pairs like: name="value"
+
+1)The href Attribute
+The <a> tag defines a hyperlink. 
+The href attribute specifies the URL of the page the link goes to:
+Example
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+
+2)The src Attribute
+The <img> tag is used to embed an image in an HTML page. 
+The src attribute specifies the path to the image to be displayed:
+Example
+<img src="img_girl.jpg">
+
+3)The width and height Attributes
+The <img> tag should also contain the width and height attributes, 
+which specify the width and height of the image (in pixels):
+Example
+<img src="img_girl.jpg" width="500" height="600">
+
+4)The alt Attribute
+The required alt attribute for the <img> tag specifies an alternate text for an image,
+if the image for some reason cannot be displayed. 
+Example
+<img src="img_girl.jpg" alt="Girl with a jacket">
+
+5)The style Attribute
+The style attribute is used to add styles to an element, such as color, font, size, and more.
+Example
+<p style="color:red;">This is a red paragraph.</p>
+
+6)The lang Attribute
+You should always include the lang attribute inside the <html> tag,
+to declare the language of the Web page. 
+eg                                          same eg but 1 diff add to what type of countries lang
+<!DOCTYPE html>                            <!DOCTYPE html>
+<html lang="en">                           <html lang="en-us">
+<body>                                     <body>
+...                                        ...
+</body>                                    </body>
+</html>                                    </html>
+
+7)The title Attribute
+The title attribute defines some extra information about an element.
+Example
+<p title="I'm a tooltip">This is a paragraph.</p>
+
+**********HTML PARAGRAPH************
+1)HTML Horizontal Rules
+-The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+-The <hr> element is used to separate content (or define a change) in an HTML page.
+-The <hr> tag is an empty tag, which means that it has no end tag.
+
+eg-----
+<!DOCTYPE html>
+<html>
+<body>
+<h1>This is heading 1</h1>
+<p>This is some text.</p>
+<hr>
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+<hr>
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+</body>
+</html>
+
+o/p
+This is heading 1
+This is some text.
+
+This is heading 2
+This is some other text.
+
+This is heading 2
+This is some other text.
+2)The Poem Problem
+-This poem will display on a single line.
+-show the poem line,any quotes,nxt by nxt line using <pre> keyword.
+Eg-------
+<!DOCTYPE html>
+<html>
+<body>
+<p>The pre tag preserves both spaces and line breaks:</p>
+<pre>
+   My Bonnie lies over the ocean.
+   My Bonnie lies over the sea.
+   My Bonnie lies over the ocean.
+   Oh, bring back my Bonnie to me.
+</pre>
+</body>
+</html>
+o/p
+The pre tag preserves both spaces and line breaks:
+My Bonnie lies over the ocean.
+My Bonnie lies over the sea.
+My Bonnie lies over the ocean.
+Oh, bring back my Bonnie to me.
+
+******HTML STYLES********
+The HTML style attribute is used to add styles to an element,such as color,font,size,and more.
+EG----
+<!DOCTYPE html>
+<html>
+<body>
+<p>I am normal</p>
+<p style="color:red;">I am red</p>
+<p style="color:blue;">I am blue</p>
+<p style="font-size:50px;">I am big</p>
+</body>
+</html>
+
+*********Style Attribute***********
+Setting the style of an HTML element, can be done with the style attribute.
+syntax
+<tagname style="property:value;">
+
+1)Background Color
+The CSS background-color property defines the background color for an HTML element.
+syntax
+<body style="background-color:powderblue;">
+
+2)2-way background color
+<h1 style="background-color:powderblue;">This is a heading</h1>
+<p style="background-color:tomato;">This is a paragraph.</p>
+3)Text Color
+The CSS color property defines the text color.
+syntax
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+4)Fonts
+The CSS font-family property defines the font to be used for an HTML element.
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p>
+5)Text Size
+The CSS font-size property defines the text size
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+6)Text Alignment
+The CSS text-align property defines the horizontal text alignment.
+<h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
+
+
+
+
+
+
+
+
