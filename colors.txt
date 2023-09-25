@@ -1,0 +1,125 @@
+&&&&&&&&&& HTML COLOR &&&&&&&&&&&&&
+-HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.
+
+Color Names
+-In HTML, a color can be specified by using a color name:
+
+Tomato
+Orange
+DodgerBlue
+MediumSeaGreen
+Gray
+SlateBlue
+Violet
+LightGray
+
+syntax
+<h1 style="background-color:Tomato;">Tomato</h1>
+<h1 style="background-color:Orange;">Orange</h1>
+<h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+<h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+<h1 style="background-color:Gray;">Gray</h1>
+<h1 style="background-color:SlateBlue;">SlateBlue</h1>
+<h1 style="background-color:Violet;">Violet</h1>
+<h1 style="background-color:LightGray;">LightGray</h1>
+
+1)Background Color
+syntax
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+
+2)Text Color
+syntax
+<h1 style="color:Tomato;">Hello World</h1>
+<p style="color:DodgerBlue;">Lorem ipsum...</p>
+<p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+
+3)Border Color
+syntax
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+
+&&&&&&&&&&&&& HTML RGB and RGBA Colors &&&&&&&&&&&&&&&&&&&&
+1)HTML RGB colors
+-An RGB color value represents RED, GREEN, and BLUE light sources.
+-An RGBA color value is an extension of RGB with an Alpha channel (opacity).
+
+eg
+<!DOCTYPE html>
+<html>
+<body>
+<h1 style="background-color:rgb(255, 210, 0);">rgb(255, 0, 0)</h1>
+<h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+<h1 style="background-color:rgb(60, 179, 120);">rgb(60, 179, 113)</h1>
+<h1 style="background-color:rgb(238, 230, 238);">rgb(238, 130, 238)</h1>
+<h1 style="background-color:rgb(217, 165, 0);">rgb(255, 165, 0)</h1>
+<h1 style="background-color:rgb(100, 90, 205);">rgb(106, 90, 205)</h1>
+</body>
+</html>
+
+2)RGBA Color Values
+-RGBA color values are an extension of RGB color values with an Alpha channel - which specifies the opacity for a color.
+-An RGBA color value is specified with:
+-rgba(red, green, blue, alpha)
+-The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)
+eg--
+<!DOCTYPE html>
+<html>
+<body>
+<h1 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+</body>
+</html>
+ 
+
+3)HEX Colors
+-A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.
+eg--
+<!DOCTYPE html>
+<html>
+<body>
+<h1 style="background-color:#ff0000;">#ff0000</h1>
+<h1 style="background-color:#0000ff;">#0000ff</h1>
+<h1 style="background-color:#3cb371;">#3cb371</h1>
+<h1 style="background-color:#ee82ee;">#ee82ee</h1>
+<h1 style="background-color:#ffa500;">#ffa500</h1>
+<h1 style="background-color:#6a5acd;">#6a5acd</h1>
+</body>
+</html>
+
+4)HSL Color Values
+-HSL stands for hue, saturation, and lightness
+eg--
+<!DOCTYPE html>
+<html>
+<body>
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+<h1 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+<h1 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+<h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+<h1 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+</body>
+</html>
+
+5)HSLA Color Values
+-HSLA color values are an extension of HSL color values, with an Alpha channel - which specifies the opacity for a color.
+-An HSLA color value is specified with:
+-hsla(hue, saturation, lightness, alpha)
+-The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)
+eg--
+<!DOCTYPE html>
+<html>
+<body>
+<h1 style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h1></body>
+</html>
