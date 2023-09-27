@@ -1,0 +1,52 @@
+&&&&&&&&&&&&&&& HTML LINKS &&&&&&&&&&&&&&
+--The HTML <a> tag defines a hyperlink.
+syntax
+<a href="url">link text</a>
+By default, links will appear as follows in all browsers:
+
+--An unvisited link is underlined and blue
+--A visited link is underlined and purple
+--An active link is underlined and red
+
+1) The target Attribute
+--The target attribute specifies where to open the linked document.
+--The target attribute can have one of the following values:
+
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+Example
+Use target="_blank" to open the linked document in a new browser window or tab:
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+2)Use an Image as a Link
+To use an image as a link, just put the <img> tag inside the <a> tag
+syn---
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+
+3)Link to an Email Address
+Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email)
+syn--
+<a href="mailto:someone@example.com">Send email</a>
+
+4)Button as a Link
+--To use an HTML button as a link, you have to add some JavaScript code.
+--JavaScript allows you to specify what happens at certain events, such as a click of a button
+syn--
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+5)Link Titles
+The title attribute specifies extra information about an element.
+syn--
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+
+&&&&&&&&&& HTML Link Colors &&&&&&&&&&&
+-By default, a link will appear like this (in all browsers):
+--An unvisited link is underlined and blue
+--A visited link is underlined and purple
+--An active link is underlined and red
+--You can change the link state colors, by using CSS
+

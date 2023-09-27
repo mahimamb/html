@@ -1,0 +1,106 @@
+&&&&&&& HTML Images &&&&&&&&&
+--The HTML <img> tag is used to embed an image in a web page.
+--Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+--The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+--The <img> tag has two required attributes:
+
+1)src - Specifies the path to the image
+2)alt - Specifies an alternate text for the image
+
+syntax
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+1)Image Size - Width and Height
+--You can use the style attribute to specify the width and height of an image.`
+2 way 
+1)eg giving the img size
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+2)eg
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+2)Animated Images
+--HTML allows animated GIFs:
+Example
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+
+3)Image as a Link
+--To use an image as a link, put the <img> tag inside the <a> tag:
+Example
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+@@@@@@@@@@@@@ Common Image Formats @@@@@@@@@@@@@@
+Abbreviation	File Format	                     File Extension
+APNG	      Animated Portable Network Graphics	.apng
+GIF	      Graphics Interchange Format	        .gif
+ICO	      Microsoft Icon	                        .ico, .cur
+JPEG	      Joint Photographic Expert Group image	.jpg, .jpeg, .jfif, .pjpeg, .pjp
+PNG	      Portable Network Graphics	                .png
+SVG	      Scalable Vector Graphics	                .svg
+
+@@@@@@@@@@@@@ Image Maps @@@@@@@@@@@@@@@@@@
+--The HTML <map> tag defines an image map. An image map is an image with clickable areas. 
+--The areas are defined with one or more <area> tags.
+
+@@@@@@@@@@@@@@ Background Image on a HTML element @@@@@@@@@@@@@@@@
+--To add a background image on an HTML element, use the HTML style attribute and the CSS background-image property:
+Example
+1)Add a background image on a HTML element:
+<p style="background-image: url('img_girl.jpg');">
+--You can also specify the background image in the <style> element, in the <head> section:
+
+2)Example
+--Specify the background image in the <style> element:
+
+<style>
+p {
+  background-image: url('img_girl.jpg');
+}
+</style>
+
+3)Background Image on a Page
+--If you want the entire page to have a background image, you must specify the background image on the <body> element:
+Example
+Add a background image for the entire page:
+
+<style>
+body {
+  background-image: url('img_girl.jpg');
+}
+</style>
+
+4)Background Repeat
+2 type 
+1) --If the background image is smaller than the element, 
+--the image will repeat itself, horizontally and vertically, until it reaches the end of the element
+eg--
+<style>
+body {
+  background-image: url('example_img_girl.jpg');
+}
+</style>
+
+2) --To avoid the background image from repeating itself, set the background-repeat property to no-repeat.
+Example
+<style>
+body {
+  background-image: url('example_img_girl.jpg');
+  background-repeat: no-repeat;
+}
+</style>
+
+@@@@@@@@@@@@@@@@@@@@@ The HTML <picture> Element @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+--The HTML <picture> element gives web developers more flexibility in specifying image resources.
+--The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device.
+--Each <source> element has a media attribute that defines when the image is the most suitable.
+syn--
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+
+
+
+
