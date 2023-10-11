@@ -1,0 +1,93 @@
+***************** HTML id Attribute **********************
+--The HTML id attribute is used to specify a unique id for an HTML element.
+--You cannot have more than one element with the same id in an HTML document.
+
+******************* Using The id Attribute **********************
+--The id attribute specifies a unique id for an HTML element. 
+--The value of the id attribute must be unique within the HTML document.
+---The id attribute is used to point to a specific style declaration in a style sheet. 
+--It is also used by JavaScript to access and manipulate the element with the specific id.
+--The id name is "case sensitive!"
+--The id name must contain at least one character,cannot start with a number,and must not contain whitespaces (spaces, tabs, etc.).
+--The syntax for id is: 
+--write a hash character (#), followed by an id name. 
+--Then, define the CSS properties within curly braces {}.
+
+eg--
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+} 
+</style>
+</head>
+<body>
+<h2>The id Attribute</h2>
+<p>Use CSS to style an element with the id "myHeader":</p>
+<h1 id="myHeader">My Header</h1>
+</body>
+</html>
+
+************ Difference Between Class and ID **************************
+--A class name can be used by multiple HTML elements,
+--while an id name must only be used by one HTML element within the page.
+
+*********** Using The id Attribute in JavaScript ***********
+--The id attribute can also be used by JavaScript to perform some tasks for that specific element.
+--JavaScript can access an element with a specific id with the "getElementById()" method:
+
+Example
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+
+
+*************** HTML Iframes **************
+--An HTML iframe is used to display a web page within a web page.
+
+1)HTML Iframe Syntax
+--The HTML <iframe> tag specifies an inline frame.
+
+<iframe src="url" title="description"></iframe>
+
+2)Iframe - Set Height and Width 
+ 2ways--normal another using style
+1)--Use the height and width attributes to specify the size of the iframe.
+--The height and width are specified in pixels by default
+
+syn--
+<iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+
+2)you can add the style attribute and use the CSS height and width properties:
+
+syn--
+<iframe src="demo_iframe.htm" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+
+3)Iframe - Remove the Border
+--By default, an iframe has a border around it.
+--To remove the border, add the style attribute and use the CSS border property:
+
+Example
+<iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+
+4)Iframe - Target for a Link
+--An iframe can be used as the target frame for a link.
+--The target attribute of the link must refer to the name attribute of the iframe:
+
+Example
+
+syn--
+<iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+
+
+
+
